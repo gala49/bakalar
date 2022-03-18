@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import Hero from "@/components/sections/hero"
+import TextImageMosaic from "@/components/sections/text-image-mosaic"
 import LargeVideo from "@/components/sections/large-video"
 import FeatureColumnsGroup from "@/components/sections/feature-columns-group"
 import FeatureRowsGroup from "@/components/sections/feature-rows-group"
@@ -12,6 +13,7 @@ import LeadForm from "./sections/lead-form"
 // Map Strapi sections to section components
 const sectionComponents = {
   ComponentSectionsHero: Hero,
+  ComponentSectionsTextImageMosaic: TextImageMosaic,
   ComponentSectionsLargeVideo: LargeVideo,
   ComponentSectionsFeatureColumnsGroup: FeatureColumnsGroup,
   ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,

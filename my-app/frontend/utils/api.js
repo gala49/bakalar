@@ -157,6 +157,11 @@ export async function getPageData({ slug, locale, preview }) {
                       title
                     }
                   }
+                  ... on ComponentSectionsTextImageMosaic {
+                    id
+                    title
+                    description
+                  }
                   ... on ComponentSectionsTestimonialsGroup {
                     id
                     description

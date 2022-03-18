@@ -5,7 +5,8 @@
     "singularName": "page",
     "pluralName": "pages",
     "displayName": "Page",
-    "name": "page"
+    "name": "page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -40,15 +41,16 @@
     "contentSections": {
       "type": "dynamiczone",
       "components": [
-        "sections.hero",
         "sections.bottom-actions",
         "sections.feature-columns-group",
         "sections.feature-rows-group",
-        "sections.testimonials-group",
+        "sections.hero",
         "sections.large-video",
-        "sections.rich-text",
+        "sections.lead-form",
         "sections.pricing",
-        "sections.lead-form"
+        "sections.rich-text",
+        "sections.testimonials-group",
+        "sections.text-a-obrazek"
       ],
       "pluginOptions": {
         "i18n": {

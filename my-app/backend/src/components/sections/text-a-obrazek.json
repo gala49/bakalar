@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_text_a_obrazeks",
+  "info": {
+    "name": "FeatureRowsGroup",
+    "displayName": "Text a obrázek",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
