@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_radek_tabulkies",
+  "info": {
+    "name": "RadekTabulky",
+    "displayName": "Řádek tabulky",
+    "icon": "arrow-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sluzba": {
+      "type": "string"
+    },
+    "cena": {
+      "type": "string"
+    }
+  }
+}

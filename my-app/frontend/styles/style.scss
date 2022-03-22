@@ -1,10 +1,16 @@
 *{
     font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     a{
         text-decoration: none;
     }
+}
+
+.section-padding{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .heroSection{
@@ -13,6 +19,30 @@
     background-position-x: center;
     background-repeat: no-repeat;
     font-size: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+
+    h1{
+        text-shadow: 0 1px 30px black;
+    }
+}
+
+.text-image-section{
+    .box-color{
+        background:#826076;
+        color: white;
+    }
+
+    .boxes-row{
+        padding-top: 0 !important;
+    }
+
+    img{
+        object-fit: cover !important;
+    }
+}
+
+.section-cenik{
+    table{
+        width: 50%;
+        float: left;
+    }
 }

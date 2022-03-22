@@ -1,9 +1,9 @@
 {
   "collectionName": "components_sections_text_a_obrazeks",
   "info": {
-    "name": "FeatureRowsGroup",
+    "name": "TextAObrazek",
     "displayName": "Text a obrázek",
-    "icon": "image",
+    "icon": "font",
     "description": ""
   },
   "options": {},
@@ -11,8 +11,10 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
+    "boxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.rich-text"
     }
   }
 }

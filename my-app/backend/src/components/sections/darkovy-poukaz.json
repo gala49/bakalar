@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_darkovy_poukazs",
+  "info": {
+    "name": "DarkovyPoukaz",
+    "displayName": "Dárkový poukaz",
+    "icon": "gift",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

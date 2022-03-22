@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_ceniks",
+  "info": {
+    "name": "cenik",
+    "displayName": "Ceník",
+    "icon": "money-bill"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sloupec": {
+      "displayName": "Tabulka",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.tabulka"
+    }
+  }
+}

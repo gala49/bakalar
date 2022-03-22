@@ -50,7 +50,9 @@
         "sections.pricing",
         "sections.rich-text",
         "sections.testimonials-group",
-        "sections.text-a-obrazek"
+        "sections.text-a-obrazek",
+        "sections.darkovy-poukaz",
+        "sections.cenik"
       ],
       "pluginOptions": {
         "i18n": {

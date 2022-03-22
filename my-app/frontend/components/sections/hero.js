@@ -35,7 +35,7 @@ const Hero = ({ data }) => {
     //   </div>
     // </main>
     
-        <main className="heroSection">
+        <main className="heroSection section-padding">
             <div className="container text-center text-white d-flex justify-content-center flex-column align-items-center">
                 <h1>{data.title}</h1>
                 <div className="d-flex flex-row flex-wrap gap-4 justify-content-center mt-3">

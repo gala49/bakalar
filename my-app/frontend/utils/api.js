@@ -157,11 +157,6 @@ export async function getPageData({ slug, locale, preview }) {
                       title
                     }
                   }
-                  ... on ComponentSectionsTextImageMosaic {
-                    id
-                    title
-                    description
-                  }
                   ... on ComponentSectionsTestimonialsGroup {
                     id
                     description
@@ -234,6 +229,33 @@ export async function getPageData({ slug, locale, preview }) {
                       type
                     }
                     title
+                  }
+                  ... on ComponentSectionsTextAObrazek {
+                    id
+                    title
+                    boxes{
+                      id
+                      content
+                      image{
+                        ...FileParts
+                      }
+                    }
+                  }
+                  ... on ComponentSectionsDarkovyPoukaz {
+                    id
+                    title
+                    text
+                  }
+                  ... on ComponentSectionsCenik {
+                    id
+                    title
+                    sloupec{
+                      sloupecNadpis
+                      radekTabulky{
+                        sluzba
+                        cena
+                      }
+                    }
                   }
                 }
               }

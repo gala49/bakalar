@@ -3,12 +3,24 @@
   "info": {
     "name": "RichText",
     "displayName": "Rich text",
-    "icon": "text-height"
+    "icon": "text-height",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "content": {
       "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "notUsedTitle": {
+      "type": "string"
     }
   }
 }

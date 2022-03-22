@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_tabulkas",
+  "info": {
+    "name": "SloupecTabulky",
+    "displayName": "Sloupec tabulky",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sloupecNadpis": {
+      "type": "string"
+    },
+    "radekTabulky": {
+      "displayName": "Řádek tabulky",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.radek-tabulky"
+    }
+  }
+}
