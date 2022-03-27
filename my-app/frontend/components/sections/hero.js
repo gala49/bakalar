@@ -4,7 +4,7 @@ import ButtonLink from "../elements/button-link"
 import NextImage from "../elements/image"
 
 const Hero = ({ data }) => {
-    return (
+  return (
     // <main className="container flex flex-col md:flex-row items-center justify-between py-12">
     //   {/* Left column for content */}
     //   <div className="flex-1 sm:pr-8">
@@ -34,21 +34,21 @@ const Hero = ({ data }) => {
     //     <NextImage media={data.picture} />
     //   </div>
     // </main>
-    
-        <main className="heroSection section-padding">
-            <div className="container text-center text-white d-flex justify-content-center flex-column align-items-center">
-                <h1>{data.title}</h1>
-                <div className="d-flex flex-row flex-wrap gap-4 justify-content-center mt-3">
-                    {data.buttons.map((button) => (
-                        <ButtonLink
-                            button={button}
-                            appearance={getButtonAppearance(button.type, "light")}
-                            key={button.id}
-                        />
-                    ))}
-                </div>
-            </div>
-        </main>
+
+    <main className="heroSection section-padding" id={data.viditelnostVMenu.idSekce}>
+      <div className="container text-center text-white d-flex justify-content-center flex-column align-items-center">
+        <h1>{data.nadpis}</h1>
+        <div className="d-flex flex-row flex-wrap gap-4 justify-content-center mt-3">
+          {data.buttons.map((button) => (
+            <ButtonLink
+              button={button}
+              appearance={getButtonAppearance(button.type, "light")}
+              key={button.id}
+            />
+          ))}
+        </div>
+      </div>
+    </main>
   )
 }
 

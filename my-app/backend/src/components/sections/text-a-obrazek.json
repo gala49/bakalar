@@ -8,13 +8,19 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "nadpis": {
       "type": "string"
     },
     "boxes": {
       "type": "component",
       "repeatable": true,
       "component": "sections.rich-text"
+    },
+    "viditelnostVMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.zobrazit-v-menu",
+      "required": true
     }
   }
 }

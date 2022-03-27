@@ -124,9 +124,39 @@ export async function getPageData({ slug, locale, preview }) {
                       type
                       url
                     }
-                    title
+                    nadpis
                     picture {
                       ...FileParts
+                    }
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
+                    }
+                  }
+                  ... on ComponentSectionsOteviraciDoba {
+                    id
+                    nadpis
+                    oteviraciDobaTabulka{
+                      id
+                      sluzba
+                      cena
+                    }
+                    upozorneni
+                    zobrazitDovolenou
+                    dovolenaText
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
+                    }
+                  }
+                  ... on ComponentSectionsKontakt {
+                    id
+                    nadpis
+                    kontakt
+                    urlMapy
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
                     }
                   }
                   ... on ComponentSectionsFeatureColumnsGroup {
@@ -232,7 +262,7 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                   ... on ComponentSectionsTextAObrazek {
                     id
-                    title
+                    nadpis
                     boxes{
                       id
                       content
@@ -240,21 +270,36 @@ export async function getPageData({ slug, locale, preview }) {
                         ...FileParts
                       }
                     }
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
+                    }
                   }
                   ... on ComponentSectionsDarkovyPoukaz {
                     id
-                    title
+                    nadpis
                     text
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
+                    }
                   }
                   ... on ComponentSectionsCenik {
                     id
-                    title
+                    nadpis
+                    platnostOd
                     sloupec{
+                      id
                       sloupecNadpis
                       radekTabulky{
+                        id
                         sluzba
                         cena
                       }
+                    }
+                    viditelnostVMenu{
+                      zobrazeni
+                      idSekce
                     }
                   }
                 }
@@ -330,35 +375,13 @@ export async function getGlobalData(locale) {
                   logo {
                     ...FileParts
                   }
-                  links {
-                    id
-                    url
-                    newTab
-                    text
-                  }
-                  button {
-                    id
-                    url
-                    newTab
-                    text
-                    type
-                  }
                 }
                 footer {
                   logo {
                     ...FileParts
                   }
-                  smallText
-                  columns {
-                    id
-                    title
-                    links {
-                      id
-                      url
-                      newTab
-                      text
-                    }
-                  }
+                  patickaInformace
+                  copyright
                 }
               }
             }

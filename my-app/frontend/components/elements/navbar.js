@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState, useEffect } from 'react';
 import PropTypes from "prop-types"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -10,44 +10,61 @@ import MobileNavMenu from "./mobile-nav-menu"
 import ButtonLink from "./button-link"
 import NextImage from "./image"
 import CustomLink from "./custom-link"
-import LocaleSwitch from "../locale-switch"
+import { Anchor } from 'nextjs-anchor'
+import classNames from "classnames"
 
-const Navbar = ({ navbar, pageContext }) => {
-  const router = useRouter()
-  const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false)
+const Navbar = ({ navbar, sections }) => {
+  const router = useRouter();
+  const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false);
+  const [stickyClass, setStickyClass] = useState('relative');
+
+  useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 100 ? setStickyClass('fixed') : setStickyClass('relative');
+    }
+  };
 
   return (
     <>
       {/* The actual navbar */}
-      <nav className="border-gray-200 border-b-2 py-6 sm:py-2">
-        <div className="container flex flex-row items-center justify-between">
+      <nav  id="nav" className={`border-gray-200 border-b-2 py-3 md:py-2 navigation ${stickyClass}`}>
+        <div className="container flex md:block flex-row justify-content-between">
           {/* Content aligned to the left */}
-          <div className="flex flex-row items-center">
-            <Link href="/">
-              <a className="h-8 w-32">
-                <NextImage width="120" height="33" media={navbar.logo} />
-              </a>
-            </Link>
+          <div className="flex flex-row justify-content-between items-center">
+            <div className="flex items-center">
+              <Link href="/">
+                <a className="h-8 w-32">
+                  <NextImage width="120" height="33" media={navbar.logo} />
+                </a>
+              </Link>
+            </div>
             {/* List of links on desktop */}
-            <ul className="hidden list-none md:flex flex-row gap-4 items-baseline ml-10">
-              {navbar.links.map((navLink) => (
-                <li key={navLink.id}>
-                  <CustomLink link={navLink} locale={router.locale}>
-                    <div className="hover:text-gray-900 px-2 py-1">
-                      {navLink.text}
-                    </div>
-                  </CustomLink>
-                </li>
-              ))}
-            </ul>
+            <div className="flex items-center">
+              <ul className="hidden list-none md:flex flex-row gap-4 py-2 mb-0">
+                {
+                  sections.map((section, index) => (        
+                    section.viditelnostVMenu.zobrazeni ? (             
+                      <li key={index}>
+                        <a href={`#${section.viditelnostVMenu.idSekce}`} rel="noopener noreferrer">
+                          {section.nadpis}
+                        </a>
+                      </li>
+                    ) : null
+                  ))  
+                }
+              </ul>
+            </div>
           </div>
           <div className="flex">
-            {/* Locale Switch Mobile */}
-            {pageContext.localizedPaths && (
-              <div className="md:hidden">
-                <LocaleSwitch pageContext={pageContext} />
-              </div>
-            )}
             {/* Hamburger menu on mobile */}
             <button
               onClick={() => setMobileMenuIsShown(true)}
@@ -55,22 +72,6 @@ const Navbar = ({ navbar, pageContext }) => {
             >
               <MdMenu className="h-8 w-auto" />
             </button>
-            {/* CTA button on desktop */}
-            {navbar.button && (
-              <div className="hidden md:block">
-                <ButtonLink
-                  button={navbar.button}
-                  appearance={getButtonAppearance(navbar.button.type, "light")}
-                  compact
-                />
-              </div>
-            )}
-            {/* Locale Switch Desktop */}
-            {pageContext.localizedPaths && (
-              <div className="hidden md:block">
-                <LocaleSwitch pageContext={pageContext} />
-              </div>
-            )}
           </div>
         </div>
       </nav>
@@ -81,7 +82,7 @@ const Navbar = ({ navbar, pageContext }) => {
           navbar={navbar}
           closeSelf={() => setMobileMenuIsShown(false)}
         />
-      )}
+      )} 
     </>
   )
 }

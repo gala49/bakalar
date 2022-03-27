@@ -52,7 +52,9 @@
         "sections.testimonials-group",
         "sections.text-a-obrazek",
         "sections.darkovy-poukaz",
-        "sections.cenik"
+        "sections.cenik",
+        "sections.oteviraci-doba",
+        "sections.kontakt"
       ],
       "pluginOptions": {
         "i18n": {

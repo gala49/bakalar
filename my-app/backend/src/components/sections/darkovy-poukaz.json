@@ -8,11 +8,17 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "nadpis": {
       "type": "string"
     },
     "text": {
       "type": "richtext"
+    },
+    "viditelnostVMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.zobrazit-v-menu",
+      "required": true
     }
   }
 }

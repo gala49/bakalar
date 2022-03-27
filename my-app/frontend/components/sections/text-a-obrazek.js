@@ -51,34 +51,35 @@ const TextAObrazek = ({ data }) => {
     //   ))}
     // </div>
     // <div dangerouslySetInnerHTML={{ __html: data.description }}></div>
-    <div className="container section-padding text-image-section">
-        <h2 className="text-center mb-5">{data.title}</h2>
+    <section id={data.viditelnostVMenu.idSekce}>
+      <div className="container section-padding text-image-section">
+        <h2 className="text-center mb-5">{data.nadpis}</h2>
         {data.boxes.map((box, index) => (
-            <div
-                className={classNames(
-                    // Common classes
-                    "d-flex flex-col justify-start row p-5 pb-0 boxes-row",
-                    {
-                    "lg:flex-row": index % 2 === 0,
-                    "lg:flex-row-reverse": index % 2 === 1,
-                    }
-                )}
-                key={box.id}
-            >
-                {/* Text section */}
-                <div className="col-12 col-lg-6 box-color p-5">
-                    <div dangerouslySetInnerHTML={{ __html: box.content }}></div>
-                </div>
-                {/* Media section */}
-                <div className="col-12 col-lg-6 max-h-full px-0">
-                    <div className="w-full h-auto">
-                        <NextImage media={box.image} />
-                    </div>
-                </div>
+          <div
+            className={classNames(
+              // Common classes
+              "d-flex flex-col justify-start row px-3 px-md-5 pb-0 boxes-row",
+              {
+                "lg:flex-row": index % 2 === 0,
+                "lg:flex-row-reverse": index % 2 === 1,
+              }
+            )}
+            key={box.id}
+          >
+            {/* Text section */}
+            <div className="col-12 col-xl-6 box-color p-5">
+              <div dangerouslySetInnerHTML={{ __html: box.content }}></div>
             </div>
+            {/* Media section */}
+            <div className="col-12 col-xl-6 max-h-full px-0">
+              <div className="w-full h-full">
+                <NextImage media={box.image} />
+              </div>
+            </div>
+          </div>
         ))}
-        
-    </div>
+      </div>
+    </section>
   )
 }
 

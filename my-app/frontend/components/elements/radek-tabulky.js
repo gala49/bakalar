@@ -1,8 +1,16 @@
-const RadekTabulky = ({sluzba, cena}) => {
+import classNames from "classnames"
+
+const RadekTabulky = ({sluzba, index}) => {
   return (
-    <tr>
-        <td>{sluzba}</td>
-        <td>{cena}</td>
+    <tr className={classNames(
+      {
+        "background-almond": index % 2 === 1,
+      }
+      )}
+      key={sluzba.id}
+    >
+        <td>{sluzba.sluzba}</td>
+        <td>{sluzba.cena}</td>
     </tr>
   )
 }

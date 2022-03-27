@@ -1,20 +1,20 @@
-import { useState } from "react"
 import Navbar from "./elements/navbar"
 import Footer from "./elements/footer"
-import NotificationBanner from "./elements/notification-banner"
+import React, { useEffect, useState } from "react";
 
-const Layout = ({ children, global, pageContext }) => {
-  const { navbar, footer, notificationBanner } = global.attributes
+const Layout = ({ children, global, sections }) => {
+  const { navbar, footer } = global.attributes
+  
+  const [offset, setOffset] = useState(0);
 
-  const [bannerIsShown, setBannerIsShown] = useState(true)
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <div className="flex-1">
-        <Navbar navbar={navbar} pageContext={pageContext} />
+        <Navbar navbar={navbar} sections={sections} />
         <div>{children}</div>
       </div>
-      
-      <Footer footer={footer} />
+
+      <Footer footer={footer} sections={sections} />
     </div>
   )
 }

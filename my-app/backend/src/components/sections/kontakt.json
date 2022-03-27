@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_kontakts",
+  "info": {
+    "displayName": "Kontakt",
+    "icon": "mobile-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nadpis": {
+      "type": "string"
+    },
+    "kontakt": {
+      "type": "richtext"
+    },
+    "urlMapy": {
+      "type": "text"
+    },
+    "viditelnostVMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.zobrazit-v-menu",
+      "required": true
+    }
+  }
+}

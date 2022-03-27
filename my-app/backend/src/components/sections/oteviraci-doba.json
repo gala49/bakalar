@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_oteviraci_dobas",
+  "info": {
+    "displayName": "Otevírací doba",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nadpis": {
+      "type": "string"
+    },
+    "upozorneni": {
+      "type": "string"
+    },
+    "zobrazitDovolenou": {
+      "type": "boolean"
+    },
+    "dovolenaText": {
+      "type": "string"
+    },
+    "oteviraciDobaTabulka": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.radek-tabulky"
+    },
+    "viditelnostVMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.zobrazit-v-menu",
+      "required": true
+    }
+  }
+}

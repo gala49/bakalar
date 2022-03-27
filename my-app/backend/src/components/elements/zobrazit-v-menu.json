@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_zobrazit_v_menus",
+  "info": {
+    "displayName": "zobrazitVMenu",
+    "icon": "street-view"
+  },
+  "options": {},
+  "attributes": {
+    "zobrazeni": {
+      "type": "boolean"
+    },
+    "idSekce": {
+      "type": "string"
+    }
+  }
+}

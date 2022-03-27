@@ -33,7 +33,7 @@ const DynamicPage = ({ sections, metadata, preview, global, pageContext }) => {
   }
 
   return (
-    <Layout global={global} pageContext={pageContext}>
+    <Layout global={global} pageContext={pageContext} sections={sections}>
       {/* Add meta tags for SEO*/}
       <Seo metadata={metadataWithDefaults} />
       {/* Display content sections */}

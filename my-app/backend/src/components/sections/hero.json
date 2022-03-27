@@ -8,7 +8,7 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "nadpis": {
       "type": "string"
     },
     "picture": {
@@ -26,6 +26,13 @@
       "type": "component",
       "repeatable": true,
       "component": "links.button-link"
+    },
+    "viditelnostVMenu": {
+      "displayName": "zobrazitVMenu",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.zobrazit-v-menu",
+      "required": true
     }
   }
 }

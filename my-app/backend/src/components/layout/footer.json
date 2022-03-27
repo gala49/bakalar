@@ -3,24 +3,23 @@
   "info": {
     "name": "Footer",
     "displayName": "Footer",
-    "icon": "caret-square-down"
+    "icon": "caret-square-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "columns": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.footer-section"
+    "patickaInformace": {
+      "type": "richtext"
     },
-    "smallText": {
+    "copyright": {
       "type": "string"
     }
   }

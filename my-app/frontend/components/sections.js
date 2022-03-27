@@ -3,6 +3,8 @@ import Hero from "@/components/sections/hero"
 import TextAObrazek from "@/components/sections/text-a-obrazek"
 import DarkovyPoukaz from "@/components/sections/darkovy-poukaz"
 import Cenik from "@/components/sections/cenik"
+import OteviraciDoba from "@/components/sections/oteviraci-doba"
+import Kontakt from "@/components/sections/kontakt"
 import LargeVideo from "@/components/sections/large-video"
 import FeatureColumnsGroup from "@/components/sections/feature-columns-group"
 import FeatureRowsGroup from "@/components/sections/feature-rows-group"
@@ -18,6 +20,8 @@ const sectionComponents = {
   ComponentSectionsTextAObrazek: TextAObrazek,
   ComponentSectionsDarkovyPoukaz: DarkovyPoukaz,
   ComponentSectionsCenik: Cenik,
+  ComponentSectionsOteviraciDoba: OteviraciDoba,
+  ComponentSectionsKontakt: Kontakt,
   ComponentSectionsLargeVideo: LargeVideo,
   ComponentSectionsFeatureColumnsGroup: FeatureColumnsGroup,
   ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,

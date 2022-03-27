@@ -5,10 +5,12 @@ import CustomLink from "../elements/custom-link"
 
 const DarkovyPoukaz = ({ data }) => {
   return (
-    <div className="container section-padding text-image-section px-5">
-        <h2 className="text-center mb-5">{data.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: data.text }}></div> 
-    </div>
+    <section id={data.viditelnostVMenu.idSekce}>
+      <div className="container section-padding text-image-section px-5">
+        <h2 className="text-center mb-5">{data.nadpis}</h2>
+        <div dangerouslySetInnerHTML={{ __html: data.text }}></div>
+      </div>
+    </section>
   )
 }
 
