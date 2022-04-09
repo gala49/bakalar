@@ -1,16 +1,15 @@
 import classNames from "classnames"
 
-const RadekTabulky = ({sluzba, index}) => {
+const RadekTabulky = ({ sluzba, index }) => {
   return (
-    <tr className={classNames(
-      {
+    <tr
+      className={classNames({
         "background-almond": index % 2 === 1,
-      }
-      )}
+      })}
       key={sluzba.id}
     >
-        <td>{sluzba.sluzba}</td>
-        <td>{sluzba.cena}</td>
+      <td>{sluzba.sluzba}</td>
+      <td>{sluzba.cena}</td>
     </tr>
   )
 }

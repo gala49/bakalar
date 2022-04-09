@@ -1,11 +1,9 @@
 import Navbar from "./elements/navbar"
 import Footer from "./elements/footer"
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
 const Layout = ({ children, global, sections }) => {
   const { navbar, footer } = global.attributes
-  
-  const [offset, setOffset] = useState(0);
 
   return (
     <div className="flex flex-col justify-between min-h-screen">

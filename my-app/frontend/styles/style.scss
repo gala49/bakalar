@@ -65,6 +65,12 @@ $x-large-breakpoint: 1200px;
     background-color: white;
     width: 100%;
     z-index:100;
+
+    &__mobile{
+        width: 100%;
+        z-index:101;
+        transition: 100ms;
+    }
 }
 
 .section-padding{
@@ -143,11 +149,16 @@ $x-large-breakpoint: 1200px;
 }
 
 .section-doba{
+    &>div{
+        background-color: #826076;
+        color: white;
+    }
+
     td{
         padding: 5px 20px;
     }
     hr{
-        background-color: white;
+        background-color: #826076;
         margin: 3rem auto;
         max-width: 50rem;
     }
@@ -164,7 +175,6 @@ $x-large-breakpoint: 1200px;
         outline: 0;
         border: 0;
         color: black;
-        font-weight: bold;
         text-align: center;
         height: 1.5em;
         opacity: .5;
@@ -172,7 +182,7 @@ $x-large-breakpoint: 1200px;
           content: '';
           // use the linear-gradient for the fading effect
           // use a solid background color for a solid bar
-          background: linear-gradient(to right, transparent, #818078, transparent);
+          background: linear-gradient(to right, transparent, white, transparent);
           position: absolute;
           left: 0;
           top: 50%;
@@ -183,11 +193,11 @@ $x-large-breakpoint: 1200px;
           content: attr(data-content);
           position: relative;
           display: inline-block;
-          color: black;
+          color: white;
       
           padding: 0 .5em;
           line-height: 1.5em;
-          background-color: #fcfcfa;
+          background-color: #826076;
         }
       }
 }

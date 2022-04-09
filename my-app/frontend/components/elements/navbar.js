@@ -1,66 +1,63 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import Link from "next/link"
-import { useRouter } from "next/router"
 
-import { getButtonAppearance } from "utils/button"
 import { mediaPropTypes, linkPropTypes, buttonLinkPropTypes } from "utils/types"
 import { MdMenu } from "react-icons/md"
 import MobileNavMenu from "./mobile-nav-menu"
-import ButtonLink from "./button-link"
 import NextImage from "./image"
-import CustomLink from "./custom-link"
-import { Anchor } from 'nextjs-anchor'
-import classNames from "classnames"
 
 const Navbar = ({ navbar, sections }) => {
-  const router = useRouter();
-  const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false);
-  const [stickyClass, setStickyClass] = useState('relative');
+  const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false)
+  const [stickyClass, setStickyClass] = useState("relative")
 
   useEffect(() => {
-    window.addEventListener('scroll', stickNavbar);
+    window.addEventListener("scroll", stickNavbar)
 
     return () => {
-      window.removeEventListener('scroll', stickNavbar);
-    };
-  }, []);
+      window.removeEventListener("scroll", stickNavbar)
+    }
+  }, [])
 
   const stickNavbar = () => {
     if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 100 ? setStickyClass('fixed') : setStickyClass('relative');
+      let windowHeight = window.scrollY
+      windowHeight > 100 ? setStickyClass("fixed") : setStickyClass("relative")
     }
-  };
+  }
 
   return (
     <>
       {/* The actual navbar */}
-      <nav  id="nav" className={`border-gray-200 border-b-2 py-3 md:py-2 navigation ${stickyClass}`}>
-        <div className="container flex md:block flex-row justify-content-between">
+      <nav
+        id="nav"
+        className={`border-gray-200 border-b-2 py-3 md:py-2 navigation ${stickyClass}`}
+      >
+        <div className="container flex lg:block flex-row justify-content-between">
           {/* Content aligned to the left */}
           <div className="flex flex-row justify-content-between items-center">
             <div className="flex items-center">
               <Link href="/">
                 <a className="h-8 w-32">
-                  <NextImage width="120" height="33" media={navbar.logo} />
+                  <NextImage width="112" height="30" media={navbar.logo} />
                 </a>
               </Link>
             </div>
             {/* List of links on desktop */}
             <div className="flex items-center">
-              <ul className="hidden list-none md:flex flex-row gap-4 py-2 mb-0">
-                {
-                  sections.map((section, index) => (        
-                    section.viditelnostVMenu.zobrazeni ? (             
-                      <li key={index}>
-                        <a href={`#${section.viditelnostVMenu.idSekce}`} rel="noopener noreferrer">
-                          {section.nadpis}
-                        </a>
-                      </li>
-                    ) : null
-                  ))  
-                }
+              <ul className="hidden list-none lg:flex flex-row gap-4 py-2 mb-0">
+                {sections.map((section, index) =>
+                  section.viditelnostVMenu.zobrazeni ? (
+                    <li key={index}>
+                      <a
+                        href={`#${section.viditelnostVMenu.idSekce}`}
+                        rel="noopener noreferrer"
+                      >
+                        {section.nadpis}
+                      </a>
+                    </li>
+                  ) : null
+                )}
               </ul>
             </div>
           </div>
@@ -68,7 +65,7 @@ const Navbar = ({ navbar, sections }) => {
             {/* Hamburger menu on mobile */}
             <button
               onClick={() => setMobileMenuIsShown(true)}
-              className="p-1 block md:hidden"
+              className="p-1 block lg:hidden"
             >
               <MdMenu className="h-8 w-auto" />
             </button>
@@ -81,8 +78,9 @@ const Navbar = ({ navbar, sections }) => {
         <MobileNavMenu
           navbar={navbar}
           closeSelf={() => setMobileMenuIsShown(false)}
+          sections={sections}
         />
-      )} 
+      )}
     </>
   )
 }

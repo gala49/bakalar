@@ -10,8 +10,9 @@ import { getLocalizedPaths } from "utils/localize"
 // optional catch all routes feature. See the related docs:
 // https://nextjs.org/docs/routing/dynamic-routes#optional-catch-all-routes
 
-const DynamicPage = ({ sections, metadata, preview, global, pageContext }) => {
+const DynamicPage = ({ sections, preview, global, pageContext }) => {
   const router = useRouter()
+  const metadata = global.attributes.metadata
 
   // Check if the required data was provided
   if (!router.isFallback && !sections?.length) {
@@ -29,7 +30,6 @@ const DynamicPage = ({ sections, metadata, preview, global, pageContext }) => {
   }
   const metadataWithDefaults = {
     ...global.attributes.metadata,
-    ...metadata,
   }
 
   return (
@@ -88,7 +88,7 @@ export async function getStaticProps(context) {
   }
 
   // We have the required page data, pass it to the page component
-  const { contentSections, metadata, localizations, slug } = pageData.attributes
+  const { contentSections, localizations, slug } = pageData.attributes
 
   const pageContext = {
     locale,
@@ -104,7 +104,6 @@ export async function getStaticProps(context) {
     props: {
       preview,
       sections: contentSections,
-      metadata,
       global: globalLocale.data,
       pageContext: {
         ...pageContext,

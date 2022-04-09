@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps }) => {
     return <ErrorPage statusCode={404} />
   }
 
-  const { metadata, favicon, metaTitleSuffix } = global.attributes
+  const { metadata, favicon } = global.attributes
 
   return (
     <>
@@ -35,7 +35,6 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
-        titleTemplate={`%s | ${metaTitleSuffix}`}
         title="Page"
         description={metadata.metaDescription}
         openGraph={{

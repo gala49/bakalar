@@ -10,7 +10,7 @@
     "nadpis": {
       "type": "string"
     },
-    "sloupec": {
+    "tabulka": {
       "displayName": "Tabulka",
       "type": "component",
       "repeatable": true,

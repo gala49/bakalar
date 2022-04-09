@@ -93,15 +93,6 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                 }
                 slug
-                metadata {
-                  metaTitle
-                  metaDescription
-                  shareImage {
-                    ...FileParts
-                  }
-                  twitterCardType
-                  twitterUsername
-                }
                 contentSections {
                   __typename
                   ... on ComponentSectionsBottomActions {
@@ -231,7 +222,10 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                   ... on ComponentSectionsRichText {
                     id
-                    content
+                    textovyObsah
+                    obrazek{
+                      ...FileParts
+                    }
                   }
                   ... on ComponentSectionsPricing {
                     id
@@ -265,8 +259,8 @@ export async function getPageData({ slug, locale, preview }) {
                     nadpis
                     boxes{
                       id
-                      content
-                      image{
+                      textovyObsah
+                      obrazek{
                         ...FileParts
                       }
                     }
@@ -288,7 +282,7 @@ export async function getPageData({ slug, locale, preview }) {
                     id
                     nadpis
                     platnostOd
-                    sloupec{
+                    tabulka{
                       id
                       sloupecNadpis
                       radekTabulky{
@@ -365,11 +359,6 @@ export async function getGlobalData(locale) {
                   }
                   twitterCardType
                   twitterUsername
-                }
-                metaTitleSuffix
-                notificationBanner {
-                  type
-                  text
                 }
                 navbar {
                   logo {

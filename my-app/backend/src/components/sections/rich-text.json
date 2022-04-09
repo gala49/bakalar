@@ -8,10 +8,10 @@
   },
   "options": {},
   "attributes": {
-    "content": {
+    "textovyObsah": {
       "type": "richtext"
     },
-    "image": {
+    "obrazek": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -19,7 +19,7 @@
         "images"
       ]
     },
-    "notUsedTitle": {
+    "nepouzityNadpisBoxu": {
       "type": "string"
     }
   }
