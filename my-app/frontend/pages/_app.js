@@ -3,6 +3,7 @@ import Head from "next/head"
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { DefaultSeo } from "next-seo"
+import { fetchAPI } from "../utils/api"
 import { getStrapiMedia } from "utils/media"
 import { getGlobalData } from "utils/api"
 import "@/styles/index.css"
@@ -67,6 +68,15 @@ MyApp.getInitialProps = async (appContext) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(appContext)
   const globalLocale = await getGlobalData(appContext.router.locale)
+
+  const globalRes = await fetchAPI("/global", {
+    attributes: {
+      favicon: "*",
+      metadata: "*",
+      navbar: "*",
+      footer: "*",
+    },
+  })
 
   return {
     ...appProps,

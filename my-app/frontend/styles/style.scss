@@ -116,6 +116,16 @@ $x-large-breakpoint: 1200px;
             height: 100%;
         }
     }
+
+    ul{
+        position:relative;
+
+        li:before{
+            content: "-";
+            position: absolute;
+            left:0;
+        }
+    }
 }
 
 .section-cenik{
