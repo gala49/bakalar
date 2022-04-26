@@ -5,11 +5,11 @@ const config = parse(process.env.DATABASE_URL);
     connection: {
       client: 'postgres',
       connection: {
-        host: "ec2-63-32-248-14.eu-west-1.compute.amazonaws.com",
+        host: "ec2-54-228-32-29.eu-west-1.compute.amazonaws.com",
         port: 5432,
-        database: "d3qii2evpu21qc",
-        user: "nnefynmkrvrobq",
-        password: "2415127c6a3ebb478fd34faf45341be2187e697558b2e9389b2870188c400e57",
+        database: "d40k4graseor9v",
+        user: "lalzwwmvxmfcor",
+        password: "92b6f303b25861d63c21a5beddcce1f0507469d0c5ddccd2fbf6053cfcb06162",
         ssl: {
           rejectUnauthorized: false
         },
