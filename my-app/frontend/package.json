@@ -45,6 +45,6 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.6.0",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.49.9"
+    "sass": "^1.51.0"
   }
 }
