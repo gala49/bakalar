@@ -8,7 +8,7 @@ import { getStrapiMedia } from "utils/media"
 import { getGlobalData } from "utils/api"
 import "@/styles/index.css"
 import "bootstrap/dist/css/bootstrap.css"
-import "@/styles/style.scss"
+import "../styles/components.scss"
 
 const MyApp = ({ Component, pageProps }) => {
   // Extract the data we need
