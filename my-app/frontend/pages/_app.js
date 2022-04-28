@@ -6,9 +6,9 @@ import { DefaultSeo } from "next-seo"
 import { fetchAPI } from "../utils/api"
 import { getStrapiMedia } from "utils/media"
 import { getGlobalData } from "utils/api"
-import "@/styles/index.css"
+import "../styles/index.css"
 import "bootstrap/dist/css/bootstrap.css"
-import "@/styles/style.scss"
+import "../styles/style.scss"
 
 const MyApp = ({ Component, pageProps }) => {
   // Extract the data we need
