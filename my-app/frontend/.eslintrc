@@ -13,6 +13,7 @@
       {
         "endOfLine": "auto",
         "printWidth": 80,
+        "react/prop-types": "off",
         "singleQuote": false,
         "trailingComma": "es5",
         "semi": false
