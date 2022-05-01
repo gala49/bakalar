@@ -34,8 +34,14 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
         {/* <!-- ManyChat --> */}
-        <script src="//widget.manychat.com/107878101891685.js" defer="defer"></script>
-        <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+        <script
+          src="//widget.manychat.com/107878101891685.js"
+          defer="defer"
+        ></script>
+        <script
+          src="https://mccdn.me/assets/js/widget.js"
+          defer="defer"
+        ></script>
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
