@@ -33,6 +33,9 @@ const MyApp = ({ Component, pageProps }) => {
           href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Courgette&display=swap"
           rel="stylesheet"
         />
+        {/* <!-- ManyChat --> */}
+        <script src="//widget.manychat.com/107878101891685.js" defer="defer"></script>
+        <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
       </Head>
       {/* Global site metadata */}
       <DefaultSeo
