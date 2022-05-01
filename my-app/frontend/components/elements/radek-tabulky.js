@@ -6,7 +6,7 @@ const RadekTabulky = ({ sluzba, index }) => {
       className={classNames({
         "background-almond": index % 2 === 1,
       })}
-      key={sluzba.id}
+      key={index}
     >
       <td>{sluzba.sluzba}</td>
       <td>{sluzba.cena}</td>

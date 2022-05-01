@@ -24,7 +24,7 @@ const TextAObrazek = ({ data }) => {
             </div>
             {/* Image section */}
             <div className="col-12 col-xl-6 max-h-full px-0">
-              <div className="w-full h-full">
+              <div className="w-full h-full position-relative">
                 <NextImage media={box.obrazek} />
               </div>
             </div>

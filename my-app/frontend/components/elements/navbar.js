@@ -29,10 +29,7 @@ const Navbar = ({ navbar, sections }) => {
   return (
     <>
       {/* The actual navbar */}
-      <nav
-        id="nav"
-        className={`border-gray-200 border-b-2 py-3 md:py-2 navigation ${stickyClass}`}
-      >
+      <nav id="nav" className={`py-3 md:py-2 navigation ${stickyClass}`}>
         <div className="container flex lg:block flex-row justify-content-between">
           {/* Content aligned to the left */}
           <div className="flex flex-row justify-content-between items-center">

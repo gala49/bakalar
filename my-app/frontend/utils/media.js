@@ -1,11 +1,14 @@
-export function getStrapiMedia(url) {
+export function getStrapiMedia(url, width) {
   if (url == null) {
     return null
   }
 
   // Return the full URL if the media is hosted on an external provider
   if (url.startsWith("http") || url.startsWith("//")) {
-    return url
+    if (width){
+      return `${url}?w=${width}`
+    }
+    return `${url}?w=unoptimized`
   }
 
   // Otherwise prepend the URL path with the Strapi URL

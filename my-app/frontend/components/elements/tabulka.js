@@ -11,7 +11,7 @@ const Tabulka = ({ sloupec }) => {
         </thead>
         <tbody>
           {sloupec.radekTabulky.map((radek, index) => (
-            <RadekTabulky index={index} sluzba={radek} key={radek.id} />
+            <RadekTabulky index={index} sluzba={radek} key={index} />
           ))}
         </tbody>
       </table>
