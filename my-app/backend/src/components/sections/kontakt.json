@@ -21,6 +21,9 @@
       "repeatable": false,
       "component": "elements.zobrazit-v-menu",
       "required": true
+    },
+    "poznamkaOParkovani": {
+      "type": "string"
     }
   }
 }
