@@ -145,6 +145,7 @@ export async function getPageData({ slug, locale, preview }) {
                     nadpis
                     kontakt
                     urlMapy
+                    poznamkaOParkovani
                     viditelnostVMenu{
                       zobrazeni
                       idSekce

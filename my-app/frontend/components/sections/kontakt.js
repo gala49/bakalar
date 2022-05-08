@@ -16,7 +16,7 @@ const Kontakt = ({ data }) => {
                 width="600"
                 height="350"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Pedik%C3%BAra,%20manik%C3%BAra%20Hodon%C3%ADn&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.875221597534!2d17.14282525839216!3d48.86058973750488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf76d0b5eeaa2c74a!2zUGVkaWvDunJhLCBtYW5pa8O6cmE!5e0!3m2!1scs!2scz!4v1652006532764!5m2!1scs!2scz"
               ></iframe>
             </div>
           </div>
