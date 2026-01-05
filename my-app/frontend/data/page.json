@@ -1,0 +1,345 @@
+{
+  "id": 1,
+  "attributes": {
+    "slug": "",
+    "locale": "cs",
+    "contentSections": [
+      {
+        "id": 1,
+        "__typename": "ComponentSectionsHero",
+        "nadpis": "Pedikúra, manikúra Hodonín",
+        "buttons": [
+          {
+            "id": 1,
+            "text": "CENÍK",
+            "url": "#cenik",
+            "newTab": false,
+            "type": "primary"
+          },
+          {
+            "id": 2,
+            "text": "ZAVOLAT",
+            "url": "tel:+420731507087",
+            "newTab": false,
+            "type": "secondary"
+          }
+        ],
+        "picture": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "alternativeText": "Pedikúra, manikúra Hodonín",
+              "width": 1920,
+              "height": 1080,
+              "mime": "image/jpeg",
+              "url": "/background.jpg",
+              "formats": {
+                "large": {
+                  "url": "/background.jpg",
+                  "width": 1920,
+                  "height": 1080
+                },
+                "medium": {
+                  "url": "/background.jpg",
+                  "width": 750,
+                  "height": 422
+                },
+                "small": {
+                  "url": "/background.jpg",
+                  "width": 500,
+                  "height": 281
+                }
+              }
+            }
+          }
+        },
+        "viditelnostVMenu": {
+          "zobrazeni": false,
+          "idSekce": "hero"
+        }
+      },
+      {
+        "id": 2,
+        "__typename": "ComponentSectionsTextAObrazek",
+        "nadpis": "Nabídka služeb",
+        "boxes": [
+          {
+            "id": 1,
+            "textovyObsah": "<h3>Mokrá pedikúra</h3><p>Provádím pedikúru klasickou cestou (skalpelem). Po 15 minutách odmočení nohou v osvěžující lázni jsou nohy připraveny na odstranění přebytečné (mrtvé) kůže. Následně zkrátím nebo jen pilníkem zarovnám nehty, vyčistím jejich okolí, odstraním kůžičky kolem nehtového lůžka. V případě potřeby odstraním kuří oka. Nakonec Vás čeká krátká masáž nohou s jejich promaštěním. Nabízím možnost parafínových zábalů, lakování i francouzskou manikúru nohou.</p><hr/><h3>Suchá (přístrojová) pedikúra</h3><p>Vhodné zejména pro diabetiky, těhotné ženy a lidi s onemocněním žil. Ošetření se provádí pomocí brusných nástavců různého průměru (vybíraných individuálně).</p><ul><li>1. krok: Desinfekce nohy</li><li>2. krok: Úprava nehtů (tj. obroušení ztvrdlé kůže, zkrácení a úprava tvaru, tloušťky, popřípadě ošetření zarostlého nehtu)</li><li>3. krok: Odstranění zrohovatělé kůže, otlaků, mozolů a kuřích ok</li><li>4. krok: Vmasírování krému</li></ul><hr/><h3>Kombi pedikúra</h3><p>Vhodná zejména pro lidi s nadměrnou hyperkeratózou. Spočívá v kombinaci mokré i suché pedikúry. Nohy jsou déle hladké, bez zjevných známek ztvrdlé kůže.</p>",
+            "obrazek": {
+              "data": {
+                "id": 5,
+                "attributes": {
+                  "alternativeText": "Salon exteriér",
+                  "width": 800,
+                  "height": 600,
+                  "mime": "image/jpeg",
+                  "url": "/flexi-sluzby_1.jpg",
+                  "formats": {
+                    "medium": {
+                      "url": "/flexi-sluzby_1.jpg",
+                      "width": 750,
+                      "height": 563
+                    },
+                    "small": {
+                      "url": "/flexi-sluzby_1.jpg",
+                      "width": 500,
+                      "height": 375
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 2,
+            "textovyObsah": "<h3>Manikúra</h3><p>Po 5 minutách odmočení nehtů na rukou zapravím nehtovou kůžičku. Následně pilníkem vytvaruji požadovaný tvar a délku nehtu. Dále je možné nehty nalakovat (používám výhradně gel laky značky Rimmel), popřípadě provést masáže rukou nebo parafínový zábal.</p><hr/><h3>HIT léčby zarostlých nehtů - pomocí špón PODOFIX a COMBIPED</h3><p>Jedná se o nehtová rovnátka (německé kvality), která umožňují ošetřit každý typ deformovaných nebo zarostlých nehtů, abyste se vyhnuli nepříjemnému chirurgickému zákroku. Aplikace špón trvá jen několik minut a poskytuje trvalé odstanění potíží ať už deformovaných či zarostlých nehtů. Za určitou dobu dochází k narovnání nehtové ploténky až do svého normálního růstu.</p><p><h4>Hlavní výhody léčby:</h4><ul><li>rychlá úleva od bolesti</li><li>jednoduchá a velmi šetrná aplikace</li><li>neomezuje pacienta při každodenních sportovních a pracovních aktivitách</li><li>vynikající alternativa chirurgického zákroku</li><li>špóny jsou klasifikovány jako zdravotnický prostředek, podobně jako zubní rovnátka</li></ul></p><hr/><p>PEDIKÚRU PROVÁDÍM I V POHODLÍ VAŠEHO DOMOVA</p>",
+            "obrazek": {
+              "data": {
+                "id": 6,
+                "attributes": {
+                  "alternativeText": "Salon interiér",
+                  "width": 800,
+                  "height": 600,
+                  "mime": "image/jpeg",
+                  "url": "/flexi-sluzby_2.jpg",
+                  "formats": {
+                    "medium": {
+                      "url": "/flexi-sluzby_2.jpg",
+                      "width": 750,
+                      "height": 563
+                    },
+                    "small": {
+                      "url": "/flexi-sluzby_2.jpg",
+                      "width": 500,
+                      "height": 375
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "viditelnostVMenu": {
+          "zobrazeni": true,
+          "idSekce": "nabidka-sluzeb"
+        }
+      },
+      {
+        "id": 3,
+        "__typename": "ComponentSectionsDarkovyPoukaz",
+        "nadpis": "Dárkový poukaz",
+        "text": "<p>Obdarujte své blízké dárkovým poukazem na pedikúru nebo manikúru a dopřejte jim nerušené chvíle relaxace a pohody.</p><p>Napište mi na e-mail <a href='mailto:ludmila.galuskova@email.cz'>ludmila.galuskova@email.cz</a> nebo zavolejte na <a href='tel:+420731507087'>731 507 087</a>.</p>",
+        "viditelnostVMenu": {
+          "zobrazeni": true,
+          "idSekce": "darkovy-poukaz"
+        }
+      },
+      {
+        "id": 4,
+        "__typename": "ComponentSectionsCenik",
+        "nadpis": "Ceník",
+        "platnostOd": "Ceník je platný od 1.1.2026",
+        "tabulka": [
+          {
+            "id": 1,
+            "sloupecNadpis": "Ceník služeb pedikúra",
+            "radekTabulky": [
+              {
+                "id": 1,
+                "sluzba": "Pedikúra (mokrá)",
+                "cena": "350 Kč"
+              },
+              {
+                "id": 2,
+                "sluzba": "Pedikúra (suchá)",
+                "cena": "650 Kč"
+              },
+              {
+                "id": 3,
+                "sluzba": "Pedikúra (kombinovaná) - hyperkeratozní nohy",
+                "cena": "500 Kč"
+              },
+              {
+                "id": 4,
+                "sluzba": "Jednorázové ošetření zarostlého nehtu",
+                "cena": "110 Kč"
+              },
+              {
+                "id": 5,
+                "sluzba": "Stříhání nehtů na nohou",
+                "cena": "120 Kč"
+              },
+              {
+                "id": 6,
+                "sluzba": "Lakování",
+                "cena": "80 Kč"
+              },
+              {
+                "id": 7,
+                "sluzba": "Lakování bez pedikúry",
+                "cena": "200 Kč"
+              },
+              {
+                "id": 8,
+                "sluzba": "Odlakování",
+                "cena": "20 Kč"
+              },
+              {
+                "id": 9,
+                "sluzba": "Gelové lakování (UV)",
+                "cena": "200 Kč"
+              },
+              {
+                "id": 10,
+                "sluzba": "Gelové lakování bez pedikúry",
+                "cena": "300 Kč"
+              },
+              {
+                "id": 11,
+                "sluzba": "Masáž nohou (uvolňovací)",
+                "cena": "20 Kč"
+              },
+              {
+                "id": 12,
+                "sluzba": "Masáž lýtek",
+                "cena": "70 Kč"
+              },
+              {
+                "id": 13,
+                "sluzba": "Aplikace špon PODOFIX",
+                "cena": "600 Kč / ks"
+              },
+              {
+                "id": 14,
+                "sluzba": "Aplikace špon COMBIPED",
+                "cena": "550 Kč / ks"
+              },
+              {
+                "id": 15,
+                "sluzba": "Odstranění špony",
+                "cena": "80 Kč"
+              },
+              {
+                "id": 16,
+                "sluzba": "Parafínový zábal nohou",
+                "cena": "130 Kč"
+              },
+              {
+                "id": 17,
+                "sluzba": "Ošetření Višněvského balzámem",
+                "cena": "50 Kč"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "sloupecNadpis": "Ceník služeb manikúra",
+            "radekTabulky": [
+              {
+                "id": 18,
+                "sluzba": "Manikúra",
+                "cena": "150 Kč"
+              },
+              {
+                "id": 19,
+                "sluzba": "Lakování",
+                "cena": "100 Kč"
+              },
+              {
+                "id": 20,
+                "sluzba": "Odlakování",
+                "cena": "20 Kč"
+              },
+              {
+                "id": 21,
+                "sluzba": "Gelové lakování (UV)",
+                "cena": "200 Kč"
+              },
+              {
+                "id": 22,
+                "sluzba": "Gelové lakování bez manikúry",
+                "cena": "300 Kč"
+              },
+              {
+                "id": 23,
+                "sluzba": "Odstranění gelového lakování (UV)",
+                "cena": "100 Kč"
+              },
+              {
+                "id": 24,
+                "sluzba": "Ošetření nehtů keratinem",
+                "cena": "150 Kč"
+              },
+              {
+                "id": 25,
+                "sluzba": "Odpilování umělých nehtů",
+                "cena": "200 Kč"
+              },
+              {
+                "id": 26,
+                "sluzba": "Parafínový zábal rukou",
+                "cena": "130 Kč"
+              }
+            ]
+          }
+        ],
+        "viditelnostVMenu": {
+          "zobrazeni": true,
+          "idSekce": "cenik"
+        }
+      },
+      {
+        "id": 5,
+        "__typename": "ComponentSectionsOteviraciDoba",
+        "nadpis": "Pracovní doba",
+        "oteviraciDobaTabulka": [
+          {
+            "id": 1,
+            "sluzba": "Pondělí",
+            "cena": "9:00 - 18:00"
+          },
+          {
+            "id": 2,
+            "sluzba": "Úterý",
+            "cena": "dle objednávek"
+          },
+          {
+            "id": 3,
+            "sluzba": "Středa",
+            "cena": "9:00 - 18:00"
+          },
+          {
+            "id": 4,
+            "sluzba": "Čtvrtek",
+            "cena": "dle objednávek"
+          },
+          {
+            "id": 5,
+            "sluzba": "Pátek",
+            "cena": "9:00 - 12:00"
+          }
+        ],
+        "upozorneni": "Ve státní svátky, soboty a neděle zavřeno.",
+        "zobrazitDovolenou": false,
+        "dovolenaText": "Dovolená 29. - 30.9.2022",
+        "viditelnostVMenu": {
+          "zobrazeni": true,
+          "idSekce": "pracovni-doba"
+        }
+      },
+      {
+        "id": 6,
+        "__typename": "ComponentSectionsKontakt",
+        "nadpis": "Kontakt",
+        "kontakt": "<p><strong>Ludmila Galušková</strong></p><p>Telefon: <a href='tel:+420731507087'>+420 731 507 087</a></p><p>Email: <a href='mailto:ludmila.galuskova@email.cz'>ludmila.galuskova@email.cz</a></p><p>IČO: 04837631</p><p style='margin-top:3rem'>Provozovna:</p><p>Perunská 30, 695 01 Hodonín</p><p style='font-weight:700'>Možnost parkování přímo u domu</p>",
+        "urlMapy": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.875221597534!2d17.14282525839216!3d48.86058973750488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf76d0b5eeaa2c74a!2zUGVkaWvDunJhLCBtYW5pa8O6cmE!5e0!3m2!1scs!2scz!4v1652006532764!5m2!1scs!2scz",
+        "poznamkaOParkovani": "Možnost parkování přímo u domu",
+        "viditelnostVMenu": {
+          "zobrazeni": true,
+          "idSekce": "kontakt"
+        }
+      }
+    ]
+  }
+}

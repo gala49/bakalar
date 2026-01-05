@@ -1,8 +1,10 @@
 const { colors } = require(`tailwindcss/defaultTheme`)
 
 module.exports = {
-  mode: "jit", // see https://tailwindcss.com/docs/just-in-time-mode
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
   darkMode: false, // or "media" or "class"
   theme: {
     extend: {
@@ -23,9 +25,6 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require("@tailwindcss/typography")],
 }

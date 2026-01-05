@@ -1,6 +1,5 @@
 import Navbar from "./elements/navbar"
 import Footer from "./elements/footer"
-import React, { useEffect, useState } from "react"
 
 const Layout = ({ children, global, sections }) => {
   const { navbar, footer } = global.attributes

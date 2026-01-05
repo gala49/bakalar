@@ -1,0 +1,87 @@
+{
+  "data": {
+    "id": 1,
+    "attributes": {
+      "favicon": {
+        "data": {
+          "id": 1,
+          "attributes": {
+            "alternativeText": "Favicon",
+            "width": 32,
+            "height": 32,
+            "mime": "image/svg+xml",
+            "url": "/favicon.ico",
+            "formats": null
+          }
+        }
+      },
+      "metadata": {
+        "metaTitle": "Pedikúra, manikúra Hodonín",
+        "metaDescription": "Profesionální pedikúra a manikúra v Hodoníně. Mokrá pedikúra, suchá pedikúra, kombi pedikúra, manikúra a léčba zarostlých nehtů.",
+        "shareImage": {
+          "data": {
+            "id": 2,
+            "attributes": {
+              "alternativeText": "Pedikúra, manikúra Hodonín",
+              "width": 1200,
+              "height": 630,
+              "mime": "image/jpeg",
+              "url": "/background.jpg",
+              "formats": {
+                "large": {
+                  "url": "/background.jpg",
+                  "width": 1200,
+                  "height": 630
+                },
+                "medium": {
+                  "url": "/background.jpg",
+                  "width": 750,
+                  "height": 394
+                },
+                "small": {
+                  "url": "/background.jpg",
+                  "width": 500,
+                  "height": 263
+                }
+              }
+            }
+          }
+        },
+        "twitterCardType": "summary_large_image",
+        "twitterUsername": null
+      },
+      "navbar": {
+        "logo": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "alternativeText": "Flexi Pedikúra logo",
+              "width": 112,
+              "height": 30,
+              "mime": "image/svg+xml",
+              "url": "/flexi-logo.svg",
+              "formats": null
+            }
+          }
+        }
+      },
+      "footer": {
+        "logo": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "alternativeText": "Flexi Pedikúra logo",
+              "width": 112,
+              "height": 30,
+              "mime": "image/svg+xml",
+              "url": "/flexi-logo_white.svg",
+              "formats": null
+            }
+          }
+        },
+        "patickaInformace": "<p>Profesionální pedikúra a manikúra v Hodoníně</p>",
+        "copyright": "© 2026 | Pedikúra, manikúra Hodonín | All rights reserved"
+      }
+    }
+  }
+}

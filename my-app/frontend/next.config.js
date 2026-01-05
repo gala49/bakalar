@@ -1,7 +1,9 @@
-module.exports = {
-  target: 'serverless',
-  i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
 }
+
+module.exports = nextConfig

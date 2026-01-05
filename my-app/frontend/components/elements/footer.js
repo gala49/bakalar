@@ -6,7 +6,7 @@ import CustomLink from "./custom-link"
 const Footer = ({ footer, sections }) => {
   return (
     <footer>
-      <div className="container flex flex-col md:flex-row md:justify-between py-5 items-center md:items-start">
+      {/* <div className="container flex flex-col md:flex-row md:justify-between py-5 items-center md:items-start">
         <div className="flex flex-col md:flex-row md:text-left">
           <div className="py-2 py-md-0">
             {footer.logo && (
@@ -32,7 +32,7 @@ const Footer = ({ footer, sections }) => {
             dangerouslySetInnerHTML={{ __html: footer.patickaInformace }}
           ></div>
         </nav>
-      </div>
+      </div> */}
       <div className="text-sm py-6 text-center col-12 copyright">
         {footer.copyright}
       </div>

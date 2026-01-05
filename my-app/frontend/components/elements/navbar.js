@@ -34,10 +34,8 @@ const Navbar = ({ navbar, sections }) => {
           {/* Content aligned to the left */}
           <div className="flex flex-row justify-content-between items-center">
             <div className="flex items-center">
-              <Link href="/">
-                <a className="h-8 w-32">
-                  <NextImage width="112" height="30" media={navbar.logo} />
-                </a>
+              <Link href="/" className="h-8 w-32">
+                <NextImage width="112" height="30" media={navbar.logo} />
               </Link>
             </div>
             {/* List of links on desktop */}
